@@ -30,6 +30,22 @@
  .photo-caption{display:block}
  .hero h1{font-size:clamp(38px,10vw,45px)}
 }
+
+/* 2026-11-10: definitive mobile first-screen layout */
+@media screen and (max-width: 900px) {
+ html,body {width:100%;max-width:100%;overflow-x:clip;}
+ .hero {overflow:hidden;padding:32px 0 46px;}
+ .hero .container {width:100%;max-width:100%;padding-left:20px;padding-right:20px;}
+ .hero-grid {display:flex!important;flex-direction:column!important;align-items:stretch!important;grid-template-columns:none!important;gap:24px!important;width:100%!important;min-width:0!important;}
+ .hero-grid > div:first-child {width:100%!important;min-width:0!important;max-width:100%!important;}
+ .hero h1 {font-size:clamp(36px,9vw,52px)!important;letter-spacing:-.045em!important;line-height:1.06!important;overflow-wrap:break-word!important;max-width:100%!important;}
+ .hero-intro {font-size:16px!important;max-width:100%;}
+ .hero-desc {font-size:13px!important;max-width:100%;}
+ .hero .photo-wrap {display:block!important;position:relative!important;flex:none!important;align-self:center!important;justify-self:center!important;float:none!important;width:156px!important;max-width:55vw!important;margin:10px auto 4px!important;transform:none!important;left:auto!important;right:auto!important;}
+ .hero .photo-wrap img {width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:3/4!important;display:block!important;object-fit:cover!important;}
+ .hero .photo-caption {display:block!important;font-size:11px!important;text-align:center!important;margin-top:14px!important;}
+ .hero-actions {max-width:100%;}
+}
 </style><style>
 .docs-section{background:#eaf0ea;padding:78px 0 88px;border-top:1px solid #d9e6dc;border-bottom:1px solid #d9e6dc}
 .docs-layout{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:74px}
